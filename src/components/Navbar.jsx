@@ -630,7 +630,7 @@ const Homebar = () => {
         </span>
       </a>
       <a
-        href="/rental-listing"
+        href="/online-rental-applications"
         className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
       >
         <FaDollarSign className="mb-2 text-xl text-mainColor" />

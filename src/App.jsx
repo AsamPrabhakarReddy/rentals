@@ -5,6 +5,7 @@ import Pricing from "./pages/Pricing";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import RentalListing from "./pages/RentalListing";
+import RentalApplications from "./pages/RentalApplications";
 function App() {
   return (
     <BrowserRouter>
@@ -14,6 +15,7 @@ function App() {
         <Route path="/register" element={<Register />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/rental-listing" element={<RentalListing />}></Route>
+        <Route path="/online-rental-applications" element={<RentalApplications />}></Route>
       </Routes>
     </BrowserRouter>
   );
