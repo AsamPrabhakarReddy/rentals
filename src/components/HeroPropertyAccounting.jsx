@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import AccountingImage from "../assets/accounting.webp"
 const HeroPropertyAccounting = () => {
     return (
-        <div className='w-full h-screen bg-gray-300 '>
-             <div className="max-w-[1400px] mx-auto h-screen grid lg:grid-cols-2 pb-10">
+        <div className='w-full lg:h-screen h-[900px] lg:mt-0 mt-[20px] bg-gray-300 '>
+             <div className="max-w-[1400px] lg:mx-auto mx-[10px] h-screen grid lg:grid-cols-2 pb-10">
          
           <div className=" p-8 flex flex-col justify-center ">
             <h1 className="lg:text-[50px] text-[35px] font-bold text-start font-semibold leading-tight text-blue-900">

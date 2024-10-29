@@ -6,6 +6,7 @@ import Register from "./pages/Register";
 import Login from "./pages/Login";
 import RentalListing from "./pages/RentalListing";
 import RentalApplications from "./pages/RentalApplications";
+import TenentScreening from "./pages/TenentScreening";
 function App() {
   return (
     <BrowserRouter>
@@ -16,6 +17,7 @@ function App() {
         <Route path="/login" element={<Login />}></Route>
         <Route path="/rental-listing" element={<RentalListing />}></Route>
         <Route path="/online-rental-applications" element={<RentalApplications />}></Route>
+        <Route path="/online-tenant-screening" element={<TenentScreening />}></Route>
       </Routes>
     </BrowserRouter>
   );

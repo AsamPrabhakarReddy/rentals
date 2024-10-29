@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import tracking from "../assets/tracking.webp";
 const HeroTracking = () => {
     return (
-        <div className='w-full h-screen'>
-             <div className="max-w-[1400px] mx-auto h-screen grid lg:grid-cols-2 pb-10">
+        <div className='w-full lg:h-screen h-[800px] lg:mt-0 mt-[20px]'>
+             <div className="max-w-[1400px] lg:mx-auto mx-[10px] h-screen grid lg:grid-cols-2 pb-10">
                 <div className="w-full h-full flex items-center justify-center lg:col-span-1">
                     <img
                     src={tracking}

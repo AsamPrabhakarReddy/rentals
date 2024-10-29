@@ -10,8 +10,8 @@ const Register = () => {
     <>
       <Navbar />
 
-      <div className="w-full min-h-[calc(100vh-90px)] pt-[50px] lg:p-[100px] flex justify-center items-center">
-        <div className="flex flex-col w-full max-w-[900px] mx-auto gap-[40px]">
+      <div className="w-full min-h-[calc(100vh-90px)] pt-[50px] lg:p-[100px] lg:mt-0 mt-[100px] flex justify-center items-center p-4">
+        <div className="flex flex-col w-full max-w-[900px] lg:mx-auto mx-[20px] gap-[40px]">
           {/* Title */}
           <div className="text-start font-mono text-[35px] md:text-[50px] text-blue-900 text-center lg:mt-[20px] lg:mb-[10px]">
             <h1>Get started with Rentals.</h1>

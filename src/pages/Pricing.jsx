@@ -14,65 +14,41 @@ const Pricing = () => {
 
   const monthlyPlans = [
     {
-      name: "Bronze",
-      description: "Best option for personal use & for your next project.",
-      price: 10,
+      name: "Unlimited",
+      description: "Below all are for Unlimited Plan",
+      price: 0,
       points: [
-        "Individual configuration",
-        "No setup, or hidden fees",
-        "Team size: 1 developer",
-        "Premium support: 6 months",
-        "Free updates: 6 months",
+        "Syndicated Listings",
+        "Background Screening",
+        "Online Rent Collection",
+        "State-Specific Leases",
+        "Maintenance Tracking",
+        "Tenant Portals",
+        "Property Accounting"
       ],
     },
     {
-      name: "Silver",
-      description: "Best option for personal use & for your next project.",
-      price: 20,
+      name: "Unlimited Plus",
+      description: "Includes everything in Unlimited, plus these premium features:",
+      price: 9 ,
       points: [
-        "Individual configuration",
-        "No setup, or hidden fees",
-        "Team size: 1 developer",
-        "Premium support: 6 months",
-        "Free updates: 6 months",
-      ],
-    },
-    {
-      name: "Gold",
-      description: "Best option for personal use & for your next project.",
-      price: 35,
-      points: [
-        "Individual configuration",
-        "No setup, or hidden fees",
-        "Team size: 1 developer",
-        "Premium support: 6 months",
-        "Free updates: 6 months",
-      ],
-    },
-    {
-      name: "Platinum",
-      description: "Best option for personal use & for your next project.",
-      price: 40,
-      points: [
-        "Individual configuration",
-        "No setup, or hidden fees",
-        "Team size: 1 developer",
-        "Premium support: 6 months",
-        "Free updates: 6 months",
+        "FastPay Rent Payments",
+        "Waived ACH Fees",
+        "Customizable Applications",
+        "Customizable Leases",
+        "Clone and Reuse Lease Agreements",
+        "Create Property Websites",
+        "2x Faster Response Time from Customer Care"  
       ],
     },
   ];
 
   const getButtonColor = (planName) => {
     switch (planName) {
-      case "Bronze":
+      case "Unlimited":
         return "text-[#CD7F32]";
-      case "Silver":
+      case "Unlimited Plus":
         return "text-gray-600";
-      case "Gold":
-        return "text-[#FFD700]";
-      case "Platinum":
-        return "text-[#E5E4E2]";
       default:
         return "text-red-500";
     }
@@ -146,7 +122,7 @@ const Pricing = () => {
 
               <section className="bg-white ">
                 <div className="py-8 px-4 lg:px-6">
-                  <div className=" grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
+                  <div className=" grid xl:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-4">
                     {monthlyPlans.map((plan) => (
                       <div
                         id="pricing_bronze"
@@ -166,7 +142,7 @@ const Pricing = () => {
                         </p>
                         <div className="flex justify-center items-baseline my-8">
                           <span className="mr-2 text-5xl font-extrabold">
-                            ${isYearly ? plan.price * 12 : plan.price}
+                            ${isYearly ? plan.price * 12 : plan.price} / Unit
                           </span>
                           <span className="text-gray-500 ">
                             /{isYearly ? "year" : "month"}
@@ -213,20 +189,39 @@ const Pricing = () => {
 
                 <div className="max-w-[1000px] mx-auto pt-12 ">
                   <Accordion
-                    title="As a new member, what are my membership options?"
-                    answer="When you're logged into your LM Club account and book a pre-priced project, your 20% discount is automatically applied at checkout. If you're not logged in and are booking a fixed price project, you will be prompted to log in with your email at checkout."
+                    title="What information is gathered in an online rental application?"
+                    answer="Our online rental application forms request the following information from prospective tenants:
+                          Their personal and contact information
+
+                          If they own pets
+
+                          Five to 10 years of work history
+
+                          Income verification documents (i.e., W2 forms, paystubs)
+
+                          Standard questions on smoking, declaring for bankruptcy, previous convictions, evictions, and refusal to pay rent
+
+                          With Unlimited Plus, you can also add five custom questions as well as tenant screening reports to ensure you have all the information you need to make a decision."
                   />
                   <Accordion
-                    title="How do I cancel my Silver or Gold or Platinum membership?"
-                    answer="You can cancel your paid Silver or Gold membership anytime. Simply log in to your LM Club account, go to the Manage My Account page, and click Cancel Auto-Renew."
+                    title="Can you edit the settings on an Rentals. online rental application?"
+                    answer="Yes, you can change the default settings of Rentals. rental applications to suit your needs. Examples include requiring one to 10 years of residence history, one to 10 years of work history, income verification, our standard questions, and adding tenant screening reports."
                   />
                   <Accordion
-                    title="How do I know I can trust the reviews I read on LM Club?"
-                    answer="We take several precautions to ensure that reviews come from real customers — including a combination of proprietary behind-the-scenes technology and good old-fashioned human investigations."
+                    title="Does Rentals. conduct automated landlord reference checks?"
+                    answer="Yes. When prospective tenants submit their previous landlords' contact information, our system automatically performs landlord reference checks to gather information on their renting experience with them. If we cannot contact their previous landlords due to their policies, you can still reach out to them directly with the provided contact information."
                   />
                   <Accordion
-                    title="How can a customer contact us for immediate guidance?"
-                    answer="You can contact us through mail on support@lmclub.com or go to the Contact page for further information. And we are always ready to help."
+                    title="Do landlords or tenants have to cover the application fee?"
+                    answer="There are no fees for rental applications, only the screening reports that can be added to the application. Landlords can choose to pay the application fee or have the prospective tenant cover the fee."
+                  />
+                  <Accordion
+                    title="Can I request the rental application without tenant screening reports?"
+                    answer="Yes, you can request a rental application without tenant screening reports."
+                  />
+                  <Accordion
+                    title="What tenant screening reports can I add to a rental application?"
+                    answer="You can add a TransUnion credit report, a criminal background check, and an eviction history report to an Avail rental application. If you prefer to purchase one or two screening reports to abide by local landlord-tenant laws, you have the option to request separate reports as well."
                   />
                 </div>
               </div>
