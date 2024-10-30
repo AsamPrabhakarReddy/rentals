@@ -6,8 +6,8 @@ import RL73 from "../assets/RL73.webp";
 
 const RentalListing7 = () => {
   return (
-    <div className="w-full lg:h-screen h-[1400px] lg:mt-[10px] mt-[230px] flex flex-col items-center lg:pb-0 pb-[10px]">
-      <div className="max-w-[1200px] lg:mx-auto  mx-[10px] lg:px-[10px] px-[10px] text-center">
+    <div className="w-full lg:h-screen h-[1400px] lg:mt-[10px] mt-[230px] flex flex-col items-center lg:pb-0 pb-[10px] bg-gray-200">
+      <div className="max-w-[1200px] lg:mx-auto  mx-[10px] lg:px-[10px] px-[10px] text-center mt-[100px]">
         <h1 className="text-start lg:text-[55px] text-[35px] font-bold text-blue-900 leading-tight">
           Additional Rentals features for landlords
         </h1>

@@ -100,11 +100,11 @@ const Footer = () => (
 
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-4">
           <div className="flex justify-center md:justify-start md:gap-[100px] gap-8">
-            <a href="/about"><FaLinkedin size={25} className="text-blue-900 hover:text-gray-700"/></a>
-            <a href="/about"><FaInstagram size={25} className="text-blue-900 hover:text-gray-700"/></a>
-            <a href="/about"><FaFacebook size={25} className="text-blue-900 hover:text-gray-700"/></a>
-            <a href="/about"><FaTwitter size={25} className="text-blue-900 hover:text-gray-700"/></a>
-            <a href="/about"><FaGoogle size={25} className="text-blue-900 hover:text-gray-700"/></a>
+            <a href="/"><FaLinkedin size={25} className="text-blue-900 hover:text-gray-700"/></a>
+            <a href="/"><FaInstagram size={25} className="text-blue-900 hover:text-gray-700"/></a>
+            <a href="/"><FaFacebook size={25} className="text-blue-900 hover:text-gray-700"/></a>
+            <a href="/"><FaTwitter size={25} className="text-blue-900 hover:text-gray-700"/></a>
+            <a href="/"><FaGoogle size={25} className="text-blue-900 hover:text-gray-700"/></a>
           </div>
           <div className="text-center md:text-right mt-6 md:mt-0">
             <p className="text-[15px] md:text-[15px] text-blue-900">© Cloud Data Networks Private Limited 2024. All rights reserved</p>

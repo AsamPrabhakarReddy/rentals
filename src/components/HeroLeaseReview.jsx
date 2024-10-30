@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import Hero4 from "../assets/leasereview.webp"
 const HeroLeaseReview = () => {
     return (
-        <div className='w-full h-screen lg:mb-0 mb-[80px]'>
-             <div className="max-w-[1400px] h-screen grid lg:grid-cols-2 pb-10 lg:mx-auto  mx-4">
+        <div className='w-full lg:h-screen h-[900px] lg:mt-0 mt-[20px]'>
+             <div className="max-w-[1400px] h-screen grid lg:grid-cols-2 pb-10 lg:mx-auto  mx-[10px]">
                 <div className="w-full h-full flex items-center justify-center lg:col-span-1">
                     <img
                     src={Hero4}
